@@ -1,54 +1,75 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Abraham Motors | Business Information</title>
-<style>
-:root{--navy:#12345a;--blue:#1769aa;--bg:#f3f6fa;--line:#dce4ed}
-*{box-sizing:border-box}
-body{margin:0;font-family:Arial,sans-serif;background:var(--bg);color:#243247;line-height:1.5}
-header{background:linear-gradient(135deg,var(--navy),var(--blue));color:white;padding:28px 18px;text-align:center}
-header h1{margin:0;font-size:28px} header p{margin:7px 0 0;opacity:.92}
-main{max-width:760px;margin:22px auto;padding:0 14px}
-.card{background:white;border:1px solid var(--line);border-radius:14px;padding:20px;margin-bottom:16px;box-shadow:0 4px 14px #16385b0d}
-h2{font-size:19px;color:var(--navy);margin:0 0 14px}
-.row{display:flex;justify-content:space-between;gap:16px;padding:10px 0;border-bottom:1px solid #edf1f5}
-.row:last-child{border-bottom:0}.key{color:#64748b}.val{font-weight:600;text-align:right;overflow-wrap:anywhere}
-.notice{font-size:13px;color:#6b7280;background:#f8fafc;border-left:4px solid #94a3b8;padding:12px;border-radius:6px}
-footer{text-align:center;color:#718096;font-size:12px;padding:16px 10px 30px}
-@media(max-width:480px){.row{display:block}.val{text-align:left;margin-top:3px}}
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="ABRAHAM MOTORS — importer of heavy and light vehicles.">
+  <title>ABRAHAM MOTORS | Business Information</title>
+  <style>
+    :root { --green:#124b32; --deep:#0b2f20; --gold:#d7b45a; --ink:#17251e; --muted:#637168; --paper:#f5f7f4; }
+    * { box-sizing:border-box }
+    body { margin:0; font-family:Arial,Helvetica,sans-serif; color:var(--ink); background:var(--paper); line-height:1.6 }
+    .ministry { background:#fff; padding:18px 16px 12px; text-align:center; border-bottom:1px solid #dce4dd }
+    .ministry img { width:min(180px,42vw); height:auto; max-height:180px; object-fit:contain }
+    .ministry p { margin:8px auto 0; max-width:760px; color:#536158; font-size:13px }
+    header { background:linear-gradient(135deg,var(--deep),var(--green)); color:#fff; padding:38px 18px; text-align:center }
+    header h1 { margin:0; letter-spacing:2px; font-size:clamp(28px,5vw,44px) }
+    header p { margin:8px 0 0; color:#e6efe8; font-size:16px }
+    main { width:min(960px,calc(100% - 28px)); margin:28px auto 42px }
+    .hero { display:grid; grid-template-columns:220px 1fr; gap:26px; align-items:center; background:#fff; padding:24px; border-radius:16px; box-shadow:0 8px 28px #173b2510; border:1px solid #e2e9e3 }
+    .portrait { width:100%; aspect-ratio:4/5; object-fit:cover; object-position:center 25%; border-radius:12px; background:#eee }
+    h2 { color:var(--green); margin:0 0 14px; font-size:22px }
+    .role { color:var(--muted); margin:0 0 10px }
+    .tag { display:inline-block; background:#eaf2ec; color:var(--green); padding:7px 12px; border-radius:99px; font-weight:700; font-size:13px }
+    .card { margin-top:20px; background:#fff; border:1px solid #e2e9e3; border-radius:16px; padding:22px 24px; box-shadow:0 8px 28px #173b2508 }
+    .details { display:grid; grid-template-columns: minmax(130px, .8fr) 1.5fr; gap:10px 18px; margin:0 }
+    dt { color:var(--muted); font-weight:700 }
+    dd { margin:0; overflow-wrap:anywhere }
+    a { color:var(--green); font-weight:700; text-decoration:none }
+    a:hover { text-decoration:underline }
+    footer { text-align:center; color:#dce9df; background:var(--deep); padding:20px 12px; font-size:13px }
+    .note { color:var(--muted); font-size:12px; margin:14px 0 0 }
+    @media(max-width:600px) { .hero { grid-template-columns:1fr; text-align:center } .portrait { width:min(210px,70%); margin:auto } .details { grid-template-columns:1fr; gap:2px } dd { margin-bottom:10px } .card { padding:18px } }
+  </style>
 </head>
 <body>
-<header>
-  <h1>ABRAHAM MOTORS</h1>
-  <p>Business Information</p>
-</header>
-<main>
-  <section class="card">
-    <h2>Business Details</h2>
-    <div class="row"><span class="key">Business name</span><span class="val">Abraham Motors</span></div>
-    <div class="row"><span class="key">General Manager</span><span class="val">Abraham Mengistu Kebed</span></div>
-    <div class="row"><span class="key">Nationality</span><span class="val">Ethiopian</span></div>
-    <div class="row"><span class="key">Region</span><span class="val">Afar</span></div>
-    <div class="row"><span class="key">Zone / Sub-city</span><span class="val">Zone 3 Gabi Rasu</span></div>
-    <div class="row"><span class="key">Woreda</span><span class="val">Awash 7 Kilo</span></div>
-    <div class="row"><span class="key">Kebele</span><span class="val">01</span></div>
-    <div class="row"><span class="key">Telephone</span><span class="val">0904971164</span></div>
-  </section>
-  <section class="card">
-    <h2>Registration Information</h2>
-    <div class="row"><span class="key">TIN</span><span class="val">0090593106</span></div>
-    <div class="row"><span class="key">Principal Registration No.</span><span class="val">AF/AT/1/0005312/2017</span></div>
-    <div class="row"><span class="key">Previous Business License No.</span><span class="val">AF/AT/02/25254/28716357/2017</span></div>
-    <div class="row"><span class="key">Capital</span><span class="val">ETB 50,000,000.00</span></div>
-    <div class="row"><span class="key">Date issued</span><span class="val">21 February 2025</span></div>
-  </section>
-  <section class="card">
-    <div class="notice"><strong>Important notice:</strong> This is an independent business information page prepared from information provided by the business owner. It is not an official government website and does not verify the validity or current status of a business licence. Please confirm all details with the relevant government office. Some details should be checked against the original licence before public use.</div>
-  </section>
-</main>
-<footer>Abraham Motors · Independent information page</footer>
+  <div class="ministry">
+    <img src="assets/ministry-logo.jpg" alt="Ministry of Trade and Regional Integration logo">
+    <p>Federal Democratic Republic of Ethiopia · Ministry of Trade and Regional Integration</p>
+  </div>
+
+  <header>
+    <h1>ABRAHAM MOTORS</h1>
+    <p>Business Information</p>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img class="portrait" src="assets/owner.jpg" alt="Portrait supplied for the business website">
+      <div>
+        <h2>ABRAHAM MOTORS</h2>
+        <p class="role">General Manager: Abraham Mengistu Kebed</p>
+        <span class="tag">Importer of Heavy And Light Vehicles</span>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Business Details</h2>
+      <dl class="details">
+        <dt>Owner / Company</dt><dd>Abraham Motors</dd>
+        <dt>General Manager</dt><dd>Abraham Mengistu Kebed</dd>
+        <dt>Nationality</dt><dd>Ethiopian</dd>
+        <dt>Field of Business</dt><dd>Importer of Heavy And Light Vehicles</dd>
+        <dt>Region</dt><dd>Afar</dd>
+        <dt>Zone / Sub-city</dt><dd>Zone 3 Gabi Rasu</dd>
+        <dt>Woreda</dt><dd>Awash 7 Kilo</dd>
+        <dt>Kebele</dt><dd>01</dd>
+        <dt>Telephone</dt><dd><a href="tel:0904971164">0904971164</a></dd>
+      </dl>
+      <p class="note">This is an independent business information website. The displayed ministry logo and business details are reproduced from materials supplied by the business owner; this page is not a government website or an online verification of a licence.</p>
+    </section>
+  </main>
+
+  <footer>© ABRAHAM MOTORS · Business Information</footer>
 </body>
 </html>
